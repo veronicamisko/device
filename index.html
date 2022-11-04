@@ -3,11 +3,133 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Магазин электроники 'Device'</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="main-header">
+      <a class="logo" href="index.html">
+        <img src="" width=145" height="36" alt="Логотоп магазина Device">
+      </a>
+      <ul class="user-navigation">
+        <li class="user-navigation-item">
+          <form class="search-form">
+            <input class="search-field" type="text" name="text" placeholder="Текст поиска">
+            <input class="search-button" type="submit" name="submit" value="Найти">
+          </form>
+        </li>
+        <li class="user-navigation-item">
+          <a class="user-navigation-link" href="#">Войти</a>
+        </li>
+        <li class="user-navigation-item">
+          <a class="user-navigation-link" href="#">Сравнить</a>
+        </li>
+        <li class="user-navigation-item">
+          <a class="user-navigation-link" href="#">Корзина</a>
+        </li>
+      </ul>
+      <nav class="main-navigation">  
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+            <a class="site-navigation-link main-catalog" href="catalog.html">Каталог товаров</a>
+            <button class="main-catalog-button" type="button">Выбрать</button>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-page">
+      <h1 class="visually-hidden">Магазин электроники 'Device'</h1>
+      <section class="promo">
+        <div class="promo-slider slider">
+          <div class="slider-photo">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий товар</span>
+            </button>
+            <img class="slider-image" src="" alt="Квадрокоптер" >
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующий товар</span>
+            </button>
+          </div>
+          <div class="slider-description">
+            <h2 class="slider-title section-title">Порхает как бабочка, жалит как пчела!</h2>
+            <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="slider-button" href="card.html">Подробнее</a>
+            <ul class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">1 товар</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">2 товар</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 товар</span>
+                </button>
+              </li>
+            </ul>
+            <dl class="slider-benefits">
+              <dt class="slider-benefits-term">800 м</dt>
+              <dd class="slider-benefits-description">Дальность полета</dd>
+              <dt class="slider-benefits-term">50 м</dt>
+              <dd class="slider-benefits-description">Радиус поражения</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <section class="categories">
+        <ul class="categories-list">
+          <li class="categories-item">
+            <a class="categoties-link" href="#">
+              <img class="categories-img" src="" alt="Виртуальная реальность">
+              <p class="categories-text">Виртуальная реальность</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a class="categoties-link" href="#">
+              <img class="categories-img" src="" alt="Моноподы для селфи">
+              <p class="categories-text">Моноподы для селфи</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a class="categoties-link" href="#">
+              <img class="categories-img" src="" alt="Экшн-камеры">
+              <p class="categories-text">Экшн-камеры</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a class="categoties-link" href="#">
+              <img class="categories-img" src="" alt="Фитнес-браслеты">
+              <p class="categories-text">Фитнес-браслеты</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a class="categoties-link" href="#">
+              <img class="categories-img" src="" alt="Умные часы">
+              <p class="categories-text">Умные часы</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a class="categoties-link" href="#">
+              <img class="categories-img" src="" alt="Квадрокоптеры">
+              <p class="categories-text">Квадрокоптеры</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      
+    </main>
+    <footer class="main-footer"></footer>
   </body>
 </html>
