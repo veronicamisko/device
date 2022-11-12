@@ -56,7 +56,7 @@
   <main class="main-catalog">
     <div class="container">
       <header class="catalog-header">
-        <h1 class="page-title">Моноподы для селфи</h1>
+        <h1 class="page-title section-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -72,7 +72,7 @@
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <label class="catalog-filter-title">Фильтр:</label>
+          <label class="catalog-filter-title-main">Фильтр:</label>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
             <button class="range-toggle toggle-min" type="button">
@@ -159,7 +159,7 @@
 
 
         <form class="sorting-type">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
+          <label class="catalog-filter-title-main" for="sorting">Сортировка:</label>
           <select class="select-control" id="sorting" name="sorting">
             <option value="popular">Популярные</option>
           </select>
@@ -204,8 +204,8 @@
         <button class="button pagination-show-more" type="button">Загрузить ещё</button>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="pagination-control">Назад</span>
+            <a class="pagination-prev pagination-disabled">
+              <span class="button pagination-control">Назад</span>
             </a>
           </li>
           <li class="pagination-item">
@@ -224,8 +224,8 @@
             <a class="pagination-link" href="#">15</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="pagination-control">Вперед</span>
+            <a class="pagination-next" href="#">
+              <span class="button pagination-control">Вперед</span>
             </a>
           </li>
         </ul>
@@ -274,6 +274,7 @@
           </li>
         </ul>
         <a class="footer-copyright" href="https://htmlacademy.ru/">
+          <img src="/img/svg/copyright.svg" width="115" height="33" alt="Логотоп магазина Device">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
