@@ -22,7 +22,15 @@
     font-display: swap;
 }  
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -30,6 +38,7 @@ body {
     line-height: 30px;
     color: #444444;
     background-color: #ffffff;
+    
 }
 
 .visually-hidden {
@@ -49,6 +58,39 @@ body {
     background-color: #FFE17F;
 }
 
+.header-container {
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.user-navigation,
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 1040px;
+}
+
+.user-navigation {
+    display: flex;
+}
+
+.user-navigation-item:nth-child(3) {
+    margin-left: auto
+}
+
+.site-navigation {
+    display: flex;
+}
+
+.site-navigation-item:nth-child(2) {
+    margin-left: auto;
+}
+
+
 .user-navigation-link {
     color: inherit;
     text-align: center;
@@ -67,6 +109,10 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.main-container {
+    flex-grow: 1;
 }
 
 .section-title {
