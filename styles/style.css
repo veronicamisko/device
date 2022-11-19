@@ -56,13 +56,23 @@ body {
 
 .header-container {
   margin: 0 auto;
-  width: 1160px;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  width: 1040px;
   display: flex;
   flex-direction: column;
   padding-left: 60px;
   padding-right: 60px;
   background-color: #FFE17F;
   color: #000000;
+}
+
+.logo {
+  margin-bottom: 30px
+}
+
+.main-navigation {
+  padding-bottom: 14px
 }
 
 .user-navigation,
@@ -75,22 +85,60 @@ body {
 
 .user-navigation {
   display: flex;
-  justify-content: space-between;
-}
-
-
-.site-navigation {
-  display: flex;
-}
-
-.site-navigation-item:nth-child(2) {
-  margin-left: auto;
+  margin-bottom: 30px;
 }
 
 .user-navigation-link {
   color: inherit;
   text-align: center;
   text-decoration: none;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+
+.user-navigation-item:nth-child(2) {
+  margin-right: auto;
+}
+
+.user-navigation-item:last-child{
+  padding-left:25px;
+}
+
+.search-form {
+  margin-right: 26px;
+}
+
+.search-field {
+  width: 360px;
+  padding-left: 48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.search-button {
+  width: 160px;
+  padding: 10px 56px;
+}
+.site-navigation {
+  display: flex;
+}
+
+.site-navigation-item:nth-child(2) {
+  margin-left: auto;
+
+}
+
+.site-navigation-item {
+  padding-right: 45px;
+}
+
+.site-navigation-item:last-child {
+  padding-right: 0;
+}
+
+
+.main-catalog {
+  padding-right: 57px;
 }
 
 .site-navigation-link,
@@ -111,8 +159,6 @@ body {
 
 /*Slider*/
 
-.main-page {}
-
 .main-container {
   flex-grow: 1;
   margin: 0 auto;
@@ -126,37 +172,75 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
 }
 
 .promo {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.promo-counter {
+  list-style: none;
+}
+
+.promo-counter-item {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: right;
 }
 
 .promo-slider {
   display: flex;
+  justify-content: space-between
+}
+
+.slider-title {
+  margin-bottom: 30px;
 }
 
 .slider-photo {
+  display: flex;
   width: 560px;
+}
+
+.slider-button {
+  align-self: center;
 }
 
 .slider-description {
   width: 560px;
+  padding-top: 123px;
+  margin-left: 40px;
+  padding-bottom: 38px;
+}
+
+.slider-text {
+  margin-bottom: 50px;
 }
 
 .slider-row {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .slider-benefits-term {
   font-size: 36px;
   color: #000000;
+  margin-bottom: 12px;
 }
 
+.slider-benefits-column {
+  margin-right: 20px;
+}
 .slider-benefits-description {
   font-size: 16px;
+  
 }
 
 .slider-pagination {
