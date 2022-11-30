@@ -155,6 +155,46 @@ body {
   text-transform: uppercase;
 }
 
+.catalog-menu-list {
+  display: flex;
+  background-color: #FFE17F;
+  margin-top: 14px;
+  padding-bottom: 27px;
+  display: none;
+}
+
+
+.catalog-menu-list ul {
+  list-style: none;
+}
+
+.catalog-menu-list a {
+  text-decoration: none;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.first-column {
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.second-column {
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.third-column {
+  margin: 0;
+  padding: 0;
+}
+
 /*Main*/
 
 /*Slider*/
