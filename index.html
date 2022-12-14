@@ -9,73 +9,84 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="header-container">
-      <a class="logo" href="index.html">
-        <img src="/img/svg/logo.svg" width="145" height="36" alt="Логотоп магазина Device">
-      </a>
-      <ul class="user-navigation">
-        <li class="user-navigation-item">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="search-field" type="text" name="text" placeholder="Текст поиска">
-            <input class="search-button" type="submit" name="submit" value="Найти">
+  <div class="container">
+    <header class="main-header">
+      <div class="header-container">
+        <div class="header-logo">
+          <a class="logo" href="index.html">
+            <img src="/img/svg/logo.svg" width="145" height="36" alt="Логотоп магазина Device">
+          </a>
+        </div>
+        <div class="navigation">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+
+            <button class="search-button" type="submit">Найти</button>
           </form>
-        </li>
-        <li class="user-navigation-item">
-          <a class="user-navigation-link" href="#">Войти</a>
-        </li>
-        <li class="user-navigation-item">
-          <a class="user-navigation-link" href="#">Сравнить</a>
-        </li>
-        <li class="user-navigation-item">
-          <a class="user-navigation-link" href="#">Корзина</a>
-        </li>
-      </ul>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li class="site-navigation-item catalog-menu">
-            <a class="site-navigation-link catalog-menu-link" href="catalog.html">Каталог товаров</a>
-            <button class="main-catalog-button visually-hidden" type="button">Выбрать</button>
-            <div class="catalog-menu-list">
-              <ul class="first-column">
-                <li class="first-column-item">
-                  <a class="first-column-link" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="first-column-item">
-                  <a class="first-column-link" href="#">Моноподы для селфи</a>
-                </li>  
-                <li class="first-column-item">
-                  <a class="first-column-link" href="#">Экшн-камеры</a>
-                </li>    
-              </ul>
-              <ul class="second-column">
-                <li class="second-column-item">
-                  <a class="second-column-link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="second-column-item">
-                  <a class="second-column-link" href="#">Умные часы</a>
-                </li>
-              </ul>
-              <ul class="third-column">
-                <li class="third-column-item">
-                  <a class="third-column-link" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+          <ul class="user-navigation">
+            <li class="user-navigation-item user-navigation-item--login">
+              <a class="user-navigation-link user-navigation-link-user user-navigation-link--login" href="#">Войти</a>
+            </li>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link user-navigation-link-compare" href="#">Сравнить</a>
+            </li>
+            <li class="user-navigation-item user-navigation-item-cart">
+              <a class="user-navigation-link user-navigation-link-cart" href="#">
+                <span class="cart-counter">2</span>
+                Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item catalog-menu">
+              <button class="catalog-menu-button" type="button">
+              Каталог товаров
+              <span class="catalog-menu-icon"></span>
+              </button>
+              <div class="catalog-menu-navigation">
+                <ul class="catalog-menu-list catalog-menu-monopods">
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-link" href="#">Моноподы для селфи</a>
+                  </li>
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-link" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="catalog-menu-list catalog-menu-bracelets">
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="catalog-menu-list catalog-menu-quadrocopters">
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+  </div>
   <main class="main-page">
     <div class="main-container">
       <h1 class="visually-hidden">Магазин электроники 'Device'</h1>
