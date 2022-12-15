@@ -91,7 +91,7 @@
                     <a class="catalog-menu-link" href="#">Виртуальная реальность</a>
                   </li>
                   <li class="catalog-menu-item">
-                    <a class="catalog-menu-link" href="#">Моноподы для селфи</a>
+                    <a class="catalog-menu-link" href="catalog.html">Моноподы для селфи</a>
                   </li>
                   <li class="catalog-menu-item">
                     <a class="catalog-menu-link" href="#">Экшн-камеры</a>
@@ -128,61 +128,137 @@
     </header>
   </div>
   <main class="main-page">
-    <div class="main-container">
-      <h1 class="visually-hidden">Магазин электроники 'Device'</h1>
+    <h1 class="visually-hidden">Магазин электроники 'Device'</h1>
+    <div class="container">
       <section class="promo">
-        <ul class="promo-counter">
-          <li class="promo-counter-item">01</li>
-          <li class="visually-hidden promo-counter-item">02</li>
-          <li class="visually-hidden promo-counter-item">03</li>
-        </ul>
-        <div class="promo-slider slider">
-          <div class="slider-photo">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий товар</span>
-            </button>
-            <img class="slider-image" src="/img/png/slider-1.png" width="560" height="560" alt="Квадрокоптер">
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующий товар</span>
-            </button>
+        <div class="promo-wrapper">
+          <div class="wrapper-slide">
+            <div class="slide slide--show">
+              <div class="slide-img">
+                <img src="/img/png/slider-1.png" width="560" height="560"
+                  alt="Квадрокоптер оснащенный мощным лазером.">
+              </div>
+              <div class="slide-content">
+                <h2 class="slide-content-title title">
+                  Порхает как бабочка, жалит как пчела!
+                </h2>
+                <p class="slide-content-description">
+                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                  лазером, замаскированным под стандартную камеру.
+                </p>
+                <a class="slider-content-link button" href="#">Подробнее</a>
+                <div class="slide-property-row">
+                  <ul class="property-device-list">
+                    <li class="property-device-item">
+                      <b class="property-device-name">800 м</b>
+                      <span class="property-device-description">
+                        Дальность полета
+                      </span>
+                    </li>
+
+                    <li class="property-device-item">
+                      <b class="property-device-name">50 м</b>
+                      <span class="property-device-description">
+                        Радиус поражения
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide-img">
+                <img src="/img/png/slider-2.png" width="560" height="560" alt="Фитнес-браслет." />
+              </div>
+              <div class="slide-content">
+                <h2 class="slide-content-title title">Худеем правильно!</h2>
+                <p class="slide-content-description">
+                  Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                  пропускать занятия и соблюдать диету.
+                </p>
+                <a class="slider-content-link button" href="#">Подробнее</a>
+                <div class="slide-property-row">
+                  <ul class="property-device-list">
+                    <li class="property-device-item">
+                      <b class="property-device-name">48 часов</b>
+                      <span class="property-device-description">Без подзарядки</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide-img">
+                <img src="/img/png/slider-3.png" width="560" height="560" alt="Самая длинная палка для селфи." />
+              </div>
+              <div class="slide-content">
+                <h2 class="slide-content-title title">
+                  Делай селфи,как Бен Стиллер!
+                </h2>
+                <p class="slide-content-description">
+                  Самая длинная палка для селфи доступна в нашем магазине.
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                </p>
+                <a class="slider-content-link button" href="#">Подробнее</a>
+                <div class="slide-property-row">
+                  <ul class="property-device-list">
+                    <li class="property-device-item">
+                      <b class="property-device-name">8,5 мм</b>
+                      <span class="property-device-description">Длина палки</span>
+                    </li>
+
+                    <li class="property-device-item">
+                      <b class="property-device-name">5 кг</b>
+                      <span class="property-device-description">Вес палки</span>
+                    </li>
+
+                    <li class="property-device-item">
+                      <b class="property-device-name">Карбон</b>
+                      <span class="property-device-description">Материал</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="slider-description">
-            <h2 class="slider-title section-title">Порхает как бабочка, жалит как пчела!</h2>
-            <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
-              под стандартную камеру.</p>
-            <div class="slider-row">
-              <a class="button slider-button" href="card.html">Подробнее</a>
-              <ul class="slider-pagination">
+          <div class="promo-controls">
+            <div class="slider-button-control">
+              <button class="slider-button-prev">
+                <span class="visually-hidden">Предыдущий</span>
+              </button>
+              <button class="slider-button-next">
+                <span class="visually-hidden">Следующий</span>
+              </button>
+            </div>
+            <div class="slider-counter-control">
+              <span class="slider-counter">01</span>
+              <ul class="slider-content-pagination">
                 <li class="slider-pagination-item">
-                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                    <span class="visually-hidden">1 товар</span>
+                  <button class="slider-pagination-button slider-pagination-button--current" type="button">
+                    <span class="visually-hidden">1 фото</span>
                   </button>
                 </li>
                 <li class="slider-pagination-item">
                   <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">2 товар</span>
+                    <span class="visually-hidden">2 фото</span>
                   </button>
                 </li>
                 <li class="slider-pagination-item">
                   <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">3 товар</span>
+                    <span class="visually-hidden">3 фото</span>
                   </button>
                 </li>
               </ul>
             </div>
-            <dl class="slider-benefits">
-              <div class="slider-benefits-column">
-                <dt class="slider-benefits-term">800 м</dt>
-                <dd class="slider-benefits-description">Дальность полета</dd>
-              </div>
-              <div class="slider-benefits-column">
-                <dt class="slider-benefits-term">50 м</dt>
-                <dd class="slider-benefits-description">Радиус поражения</dd>
-              </div>
-            </dl>
           </div>
         </div>
       </section>
+    </div>
+      
+      
+  
       <section class="categories">
         <h2 class="visually-hidden">Популярные категории товаров</h2>
         <ul class="categories-list">
