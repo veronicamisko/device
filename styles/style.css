@@ -1122,19 +1122,85 @@ img {
   background: url("/img/png/credit.png");
 }
 
-/*Delivery-option*/
+/*Delivery*/
 
-.delivery-option {
-  margin: 0 auto;
-  width: 1160px;
-  margin-bottom: 70px;
+.delivery {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0;
+  background-color: #f0f0f0;
+  cursor: pointer;
 }
 
-.delivery-button {
-  width: 1160px;
+.delivery:hover .delivery-icon {
+  background-color: #ffc700;
+}
+
+.delivery:hover .delivery-info::before {
+  opacity: 1;
+}
+
+.delivery:active {
+  opacity: 0.3;
+}
+
+.delivery:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.delivery-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 100px;
+  background-color: #ffe17f;
+  flex-wrap: 0;
+  flex-shrink: 0;
+}
+
+.delivery-icon::after {
+  content: "";
+  display: block;
+  width: 47px;
+  height: 31px;
+  background: url("/img/svg/delivery-car.svg");
+}
+
+.delivery-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-size: 20px;
   line-height: 23px;
-  padding: 40px 125px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 auto;
+}
+
+.delivery-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 50%;
+  margin: 0 42px;
+  flex-wrap: 0;
+  flex-shrink: 0;
+}
+
+.delivery-info::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 20px;
+  background: url("/img/svg/info.svg") no-repeat center;
+  opacity: 0.3;
 }
 
 /*About*/
