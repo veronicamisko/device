@@ -1206,65 +1206,100 @@ img {
 /*About*/
 
 .about-columns {
-  width: 1160px;
   display: flex;
-  margin: 0 auto;
   margin-bottom: 70px;
 }
 
 .about {
-  width: 520px;
-  margin-right: 108px;
+  padding-right: 18px;
+  width: 45%;
+  margin-right: 80px;
 }
 
-.about-title {
+.about-title,
+.contacts-title {
   margin: 48px 0;
 }
 
-.about p {
+.about-title::before,
+.contacts-title::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  margin-bottom: 40px;
+}
+
+.text {
   margin-bottom: 30px;
 }
 
-.delivery-companie-list {
-  margin-bottom: 30px;
-
+.delivery-list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+  list-style: none;
 }
 
-.delivery-companie-list-item {
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: -0.02em;
-  color: #000000;
+.delivery-item {
   margin-bottom: 19px;
 }
 
-.button {
+.delivery-item p {
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: -0.02em;
   color: #000000;
+  margin: 0;
+}
+
+.delivery-item p::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FFC700;
+  margin-right: 26px;
 }
 
 /*Contacts*/
 
 .contacts {
-  width: 532px;
-}
-
-.contacts-title {
-  margin: 48px 0;
+  padding-left: 65px;
+  padding-right: 18px;
+  width: 55%;
 }
 
 .contacts-subtitle {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 24px;
   line-height: 30px;
   color: #000000;
+  margin-bottom: 15px;
+  letter-spacing: -0.01em;
 }
 
 .contacts-address {
   font-style: normal;
+  margin-bottom: 30px;
 }
 
 .contacts-phone {
   color: #444444;
+}
+
+.contacts-phone:hover {
+  color: #FFC700;
+}
+
+.contacts-phone:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.contacts-phone:active {
+  opacity: 0.3;
 }
 
 .contacts-schedule {
@@ -1273,6 +1308,15 @@ img {
   padding: 0;
   margin-bottom: 30px;
 }
+
+.about-button {
+  max-width: 270px;
+}
+
+.contacts-button {
+  max-width: 260px;
+}
+
 
 /*Subscription*/
 
