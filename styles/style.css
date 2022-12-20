@@ -1321,46 +1321,101 @@ img {
 /*Subscription*/
 
 .subscription {
-  display: flex;
-  flex-direction: column;
+  padding: 0;
+  padding-top: 64px;
+  padding-bottom: 54px;
   background-color: #F0F0F0;
 }
 
-.subscription-container {
-  margin: 0 auto;
-  width: 1160px;
-  margin-top: 64px;
-  margin-bottom: 56px;
-}
-
-.subscription-row {
+.subscription-row-content {
   display: flex;
-  justify-content: space-between;
-}
-
-.subscription-row:first-child {
+  align-items: center;
   margin-bottom: 144px;
 }
 
-.subscription-title {
-  width: 350px;
+.subscription-row-content .text {
+  margin: 10px 0 0 auto;
+  flex: 0 0 48%;
 }
 
-.subscription-description {
-  width: 560px;
+.subscription-title {
+  margin: 0;
+  padding-left: 7px;
+  flex: 0 0 30%;
+}
+
+.subscription-row-form {
+  display: flex;
+  align-items: center;
+}
+
+.subscription-form {
+  display: flex;
+  min-height: 57px;
+  width: 70%;
+  margin-right: auto;
 }
 
 .subscription-field {
-  padding-left: 17px;
-  padding-right: 447px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #cecece;
+  padding: 11px 10px 14px 16px;
+  background-color: transparent;
+  width: 100%;
+}
 
+.subscription-field:focus {
+  background-color: #dcdcdc;
+}
+
+.subscription-field:invalid {
+  background-color: #ff3d3d;
+}
+
+.subscription-field::placeholder {
+  opacity: 0.5;
+}
+
+.subscription-text {
+  padding-right: 1px;
+  vertical-align: middle;
+  width: 14%;
+}
+
+.subscription-text::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 17px;
+  background: url("/img/svg/check.svg") no-repeat center;
+  margin-right: 16px;
+  vertical-align: middle;
 }
 
 .subscription-button {
-  padding: 18px 39px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  outline: none;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  width: 31.2%;
+  padding: 0 40px;
+  border: 3px solid #cecece;
+  cursor: pointer;
 }
+
+.subscription-button:hover {
+  opacity: 0.6;
+}
+
+.subscription-button:active {
+  opacity: 0.3;
+}
+
 
 /*Footer*/
 
