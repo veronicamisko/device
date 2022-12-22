@@ -502,6 +502,72 @@
       </section>
     </div>
   </footer>
+
+  <section class="modal">
+    <div class="modal-body">
+      <div class="modal-content">
+        <div class="modal-row">
+          <h2 class="modal-title title">Доставка под заказ</h2>
+          <button class="modal-button-close">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal-row">
+            <div class="modal-column">
+              <label class="modal-label" for="user-name">Ваше имя:</label>
+              <input class="modal-input" type="text" name="user-name" id="user-name" placeholder="Введите имя"
+                required>
+              <span class="modal-input-icon"></span>
+              <p class="value-invalid name-invalid">Добавьте имя</p>
+            </div>
+            <div class="modal-column">
+              <label class="modal-label" for="user-email">
+                Ваш e-mail:
+              </label>
+              <input class="modal-input" type="email" name="user-email" id="user-email" placeholder="email@example.com"
+                required>
+              <span class="modal-input-icon"></span>
+              <p class="value-invalid email-invalid">Забавный у вас адрес</p>
+            </div>
+          </div>
+          <div class="modal-row">
+            <div class="modal-column modal-column-product">
+              <label class="modal-label" for="product">
+                Что нужно привезти:
+              </label>
+              <input class="modal-input" type="text" name="product" id="product" placeholder="В свободной форме" />
+            </div>
+            <div class="modal-column">
+              <div class="number-product">
+                <div class="number-product-row">
+                  <label class="modal-label" for="number-product">
+                    Количество:
+                  </label>
+                  <button class="number-product-info" type="button"></button>
+                  <p class="number-product-info-text" id="info-text">
+                    Постараемся найти, сколько нужно. Привезём только 5,
+                    больше всё равно нет.
+                  </p>
+                </div>
+                <div class="number-product-row">
+                  <button class="number-product-minus" type="button">
+                    <span class="visually-hidden">Убавить</span>
+                  </button>
+                  <input class="modal-input modal-input-number" type="number" name="number-product" id="number-product"
+                    value="0" min="1">
+                  <button class="number-product-plus" type="button">
+                    <span class="visually-hidden">Прибавить</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="modal-button button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
   <script src="/js/script.js"></script>
 </body>
 
